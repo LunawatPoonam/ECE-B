@@ -1,4 +1,4 @@
-
+// A program to insert a substring into a given main string from a given position 
 #include<stdio.h>
 #include<string.h>
 
@@ -29,7 +29,7 @@ void insertion_str(char str1[50], char str2[50], char str3[100])
 
     strncpy(str3, str1, pos);
     strcat(str3, str2);
-    strcat(str3, str1 + pos + 1);
+    strcat(str3, str1 + pos);
 
     printf("%s", str3);
 }
